@@ -1,0 +1,17 @@
+.hero-section {
+  background-color: #e8f5e9;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #2e7d32 !important;
+}
+
+footer {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+footer a {
+  color: #f8f9fa;
+}

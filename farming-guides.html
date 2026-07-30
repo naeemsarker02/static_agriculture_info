@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farming Guides | Agricultural Information Hub</title>
+  <meta name="description" content="Browse step-by-step farming guides categorized by crop type, season, and farming method.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><i class="fa-solid fa-seedling"></i> Agri Hub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="farming-guides.html">Farming Guides</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="crop-details.html">Crop Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pest-control.html">Pest Control</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <h1>Farming Guides</h1>
+    <p class="lead">
+      Browse our collection of guides and tutorials covering farming practices, techniques, and methodologies.
+      Use the filters below to find guides by crop type, season, or farming method.
+    </p>
+
+    <div class="btn-group flex-wrap mb-4" role="group">
+      <button type="button" class="btn btn-outline-success filter-btn" data-category="all">All</button>
+      <button type="button" class="btn btn-outline-success filter-btn" data-category="grains">Grains</button>
+      <button type="button" class="btn btn-outline-success filter-btn" data-category="fruits">Fruits</button>
+      <button type="button" class="btn btn-outline-success filter-btn" data-category="vegetables">Vegetables</button>
+      <button type="button" class="btn btn-outline-success filter-btn" data-category="seasonal">By Season</button>
+      <button type="button" class="btn btn-outline-success filter-btn" data-category="organic-method">By Method</button>
+    </div>
+
+    <div class="accordion" id="guidesAccordion">
+
+      <div class="accordion-item" data-category="grains">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#guide1">
+            Growing Wheat: A Beginner's Guide <span class="badge bg-success ms-2">Grains</span>
+          </button>
+        </h2>
+        <div id="guide1" class="accordion-collapse collapse" data-bs-parent="#guidesAccordion">
+          <div class="accordion-body">
+            <ol>
+              <li>Choose a well-drained loamy soil and test its pH, aiming for 6.0 to 7.0.</li>
+              <li>Sow seeds in early autumn or spring, spacing rows about 15 cm apart.</li>
+              <li>Water regularly during germination, then reduce once seedlings are established.</li>
+              <li>Apply nitrogen-rich fertilizer at the tillering stage for stronger stalks.</li>
+              <li>Watch for rust and aphids, and treat early with organic sprays if spotted.</li>
+              <li>Harvest when the grain heads turn golden brown and stalks are dry.</li>
+            </ol>
+            <p><strong>Tip:</strong> Rotate wheat with legumes each season to naturally replenish soil nitrogen.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-category="grains">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#guide2">
+            Rice Cultivation Basics <span class="badge bg-success ms-2">Grains</span>
+          </button>
+        </h2>
+        <div id="guide2" class="accordion-collapse collapse" data-bs-parent="#guidesAccordion">
+          <div class="accordion-body">
+            <ol>
+              <li>Prepare a flooded paddy field or a well-irrigated plot with clay-rich soil.</li>
+              <li>Start seeds in a nursery bed for two to three weeks before transplanting.</li>
+              <li>Transplant seedlings into the main field in rows about 20 cm apart.</li>
+              <li>Maintain a shallow water level of 5 to 10 cm through most of the growing period.</li>
+              <li>Drain the field two weeks before harvest to allow the soil to firm up.</li>
+              <li>Harvest when about 80 percent of the grains have turned golden.</li>
+            </ol>
+            <p><strong>Tip:</strong> Keep the water level consistent, as fluctuating water stresses young rice plants.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-category="vegetables">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#guide3">
+            Growing Tomatoes at Home <span class="badge bg-success ms-2">Vegetables</span>
+          </button>
+        </h2>
+        <div id="guide3" class="accordion-collapse collapse" data-bs-parent="#guidesAccordion">
+          <div class="accordion-body">
+            <ol>
+              <li>Start seeds indoors about six weeks before the last expected frost.</li>
+              <li>Transplant seedlings outdoors once they have four true leaves and nights stay warm.</li>
+              <li>Space plants 45 to 60 cm apart in full sun with well-drained soil.</li>
+              <li>Stake or cage plants early to support them as they grow.</li>
+              <li>Water deeply and consistently to prevent blossom end rot.</li>
+              <li>Harvest fruit when fully colored but still firm to the touch.</li>
+            </ol>
+            <p><strong>Tip:</strong> Pinch off side shoots on indeterminate varieties to focus energy on fruit production.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-category="fruits">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#guide4">
+            Mango Orchard Care <span class="badge bg-success ms-2">Fruits</span>
+          </button>
+        </h2>
+        <div id="guide4" class="accordion-collapse collapse" data-bs-parent="#guidesAccordion">
+          <div class="accordion-body">
+            <ol>
+              <li>Plant grafted saplings 8 to 10 meters apart in well-drained, sandy loam soil.</li>
+              <li>Water young trees regularly for the first two years to establish roots.</li>
+              <li>Prune after harvest each year to keep an open canopy for airflow.</li>
+              <li>Apply organic compost around the base before the flowering season.</li>
+              <li>Protect flowers from hoppers and mildew with neem-based sprays.</li>
+              <li>Harvest fruit when it develops a slight color change and a sweet aroma near the stem.</li>
+            </ol>
+            <p><strong>Tip:</strong> Avoid heavy nitrogen fertilizer close to flowering, as it can reduce fruit set.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-category="seasonal">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#guide5">
+            Monsoon Planting Calendar <span class="badge bg-success ms-2">Seasonal</span>
+          </button>
+        </h2>
+        <div id="guide5" class="accordion-collapse collapse" data-bs-parent="#guidesAccordion">
+          <div class="accordion-body">
+            <ol>
+              <li>Prepare fields before the rains by clearing debris and improving drainage channels.</li>
+              <li>Sow rice, maize, and pulses at the start of the monsoon for maximum rainfall benefit.</li>
+              <li>Build raised beds for vegetables to prevent waterlogging.</li>
+              <li>Monitor for fungal diseases, which spread quickly in humid conditions.</li>
+              <li>Apply mulch to reduce soil erosion from heavy rainfall.</li>
+              <li>Plan harvest timing around breaks in the rains to avoid crop damage.</li>
+            </ol>
+            <p><strong>Tip:</strong> Keep a close eye on weather forecasts to time fertilizer application between rain events.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-category="organic-method">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#guide6">
+            Organic Composting for Soil Health <span class="badge bg-success ms-2">Organic Method</span>
+          </button>
+        </h2>
+        <div id="guide6" class="accordion-collapse collapse" data-bs-parent="#guidesAccordion">
+          <div class="accordion-body">
+            <ol>
+              <li>Collect a mix of green waste, such as vegetable scraps, and brown waste, such as dry leaves.</li>
+              <li>Layer greens and browns in roughly equal parts in a compost bin or pile.</li>
+              <li>Turn the pile every one to two weeks to aerate and speed up decomposition.</li>
+              <li>Keep the pile as moist as a wrung-out sponge, watering if it dries out.</li>
+              <li>Let the compost mature for two to three months until it becomes dark and crumbly.</li>
+              <li>Mix finished compost into topsoil before planting to boost fertility.</li>
+            </ol>
+            <p><strong>Tip:</strong> Avoid adding meat, dairy, or oily foods to the pile as they attract pests and slow composting.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="py-4 mt-5">
+    <div class="container text-center">
+      <h5><i class="fa-solid fa-seedling"></i> Agri Hub</h5>
+      <p>Your trusted resource for farming guides, crop details, and pest control strategies.</p>
+      <div class="mb-3">
+        <a href="#" class="me-3"><i class="fa-brands fa-facebook fa-lg"></i></a>
+        <a href="#" class="me-3"><i class="fa-brands fa-twitter fa-lg"></i></a>
+        <a href="#" class="me-3"><i class="fa-brands fa-instagram fa-lg"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+      </div>
+      <p class="mb-0">&copy; <span id="year"></span> Agricultural Information Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/guide-filter.js"></script>
+</body>
+</html>
